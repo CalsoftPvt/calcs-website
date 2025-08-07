@@ -1,0 +1,246 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Calsoft Cloud Simulator</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden" style='font-family: Inter, "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e7eef4] px-10 py-3">
+          <div class="flex items-center gap-4 text-[#0d161c]">
+            <!-- Add logo image here -->
+            <img src="calcs-logo.png" alt="CalCS Logo" class="h-16 w-16 object-contain" />
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a class="text-[#0d161c] text-sm font-medium leading-normal" href="#features">Features</a>
+              <a class="text-[#0d161c] text-sm font-medium leading-normal" href="#case-study">Case Study</a>
+              <a class="text-[#0d161c] text-sm font-medium leading-normal" href="#blog">Blog</a>
+            </div>
+            <button
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#259ef4] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em]"
+              onclick="window.location.href='https://www.calsoftinc.com/contact-us'"
+              >
+              <span class="truncate">Request a Demo</span>
+            </button>
+          </div>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          
+          
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="flex flex-wrap justify-between gap-3 p-4">
+              <p class="text-[#0d131c] tracking-light text-[32px] font-bold leading-tight min-w-72">How to Simulate Azure Failures with CalCS</p>
+            </div>
+            <p class="text-[#0d131c] text-base font-normal leading-normal pb-3 pt-1 px-4">
+              Simulating failures in Azure environments is crucial for ensuring the reliability and resilience of your applications. CalCS provides a powerful platform to simulate
+              various failure scenarios, allowing you to test your systems under stress and identify potential weaknesses. This guide will walk you through the steps to simulate
+              Azure failures using CalCS.
+            </p>
+            <h3 class="text-[#0d131c] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Prerequisites</h3>
+            <p class="text-[#0d131c] text-base font-normal leading-normal pb-3 pt-1 px-4">Before you begin, ensure you have the following:</p>
+            <div class="px-4">
+              <label class="flex gap-x-3 py-3 flex-row">
+                <input
+                  type="checkbox"
+                  class="h-5 w-5 rounded border-[#ced8e8] border-2 bg-transparent text-[#0d65f2] checked:bg-[#0d65f2] checked:border-[#0d65f2] checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#ced8e8] focus:outline-none"
+                />
+                <p class="text-[#0d131c] text-base font-normal leading-normal">An active Azure subscription</p>
+              </label>
+              <label class="flex gap-x-3 py-3 flex-row">
+                <input
+                  type="checkbox"
+                  class="h-5 w-5 rounded border-[#ced8e8] border-2 bg-transparent text-[#0d65f2] checked:bg-[#0d65f2] checked:border-[#0d65f2] checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#ced8e8] focus:outline-none"
+                />
+                <p class="text-[#0d131c] text-base font-normal leading-normal">CalCS account with appropriate permissions</p>
+              </label>
+            </div>
+            <h3 class="text-[#0d131c] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Step 1: Define Your Failure Scenario</h3>
+            <p class="text-[#0d131c] text-base font-normal leading-normal pb-3 pt-1 px-4">In CalCS, you can define various failure scenarios, such as:</p>
+            <div class="px-4">
+              <label class="flex gap-x-3 py-3 flex-row">
+                <input
+                  type="checkbox"
+                  class="h-5 w-5 rounded border-[#ced8e8] border-2 bg-transparent text-[#0d65f2] checked:bg-[#0d65f2] checked:border-[#0d65f2] checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#ced8e8] focus:outline-none"
+                />
+                <p class="text-[#0d131c] text-base font-normal leading-normal">Virtual Machine failures</p>
+              </label>
+              <label class="flex gap-x-3 py-3 flex-row">
+                <input
+                  type="checkbox"
+                  class="h-5 w-5 rounded border-[#ced8e8] border-2 bg-transparent text-[#0d65f2] checked:bg-[#0d65f2] checked:border-[#0d65f2] checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#ced8e8] focus:outline-none"
+                />
+                <p class="text-[#0d131c] text-base font-normal leading-normal">Network disruptions</p>
+              </label>
+              <label class="flex gap-x-3 py-3 flex-row">
+                <input
+                  type="checkbox"
+                  class="h-5 w-5 rounded border-[#ced8e8] border-2 bg-transparent text-[#0d65f2] checked:bg-[#0d65f2] checked:border-[#0d65f2] checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#ced8e8] focus:outline-none"
+                />
+                <p class="text-[#0d131c] text-base font-normal leading-normal">Database outages</p>
+              </label>
+            </div>
+            <p class="text-[#0d131c] text-base font-normal leading-normal pb-3 pt-1 px-4">
+              For this example, we'll simulate a Virtual Machine failure. Use the CalCS interface to select the target VM and specify the failure type (e.g., sudden shutdown).
+            </p>
+            <div class="flex w-full grow bg-[#f8f9fc] @container p-4">
+              <div class="w-full gap-1 overflow-hidden bg-[#f8f9fc] @[480px]:gap-2 aspect-[3/2] rounded-xl flex">
+                <div
+                  class="w-full bg-center bg-no-repeat bg-cover aspect-auto rounded-none flex-1"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCBFwTPhTJ7gJSgo04Q8bf9hM43oPKYxFp_1oG6C0b24HflLe2COhxkt8Ka3wOpbwRXyyXYL4V0B1c9Pmq20Hz4AQR_vSEDuGUZHcSAZj-bSw2H77kNfBitwurYXQtQK7iQAd8Cirof3tV81OVIVBIORvCLu0ZgMF3U0GEtAozlZibQrlDAo6aOCS19heXYaRpOcvlUxOEBlOJ843gdwc6g3Dfn_fHgfpVBtyx64pPz27MysZNwXqANXpRRdLLbtPmYZHSAsKNgVbOJ");'
+                ></div>
+              </div>
+            </div>
+            <h3 class="text-[#0d131c] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Step 2: Configure the Simulation</h3>
+            <p class="text-[#0d131c] text-base font-normal leading-normal pb-3 pt-1 px-4">Configure the simulation parameters, including:</p>
+            <div class="px-4">
+              <label class="flex gap-x-3 py-3 flex-row">
+                <input
+                  type="checkbox"
+                  class="h-5 w-5 rounded border-[#ced8e8] border-2 bg-transparent text-[#0d65f2] checked:bg-[#0d65f2] checked:border-[#0d65f2] checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#ced8e8] focus:outline-none"
+                />
+                <p class="text-[#0d131c] text-base font-normal leading-normal">Duration of the failure</p>
+              </label>
+              <label class="flex gap-x-3 py-3 flex-row">
+                <input
+                  type="checkbox"
+                  class="h-5 w-5 rounded border-[#ced8e8] border-2 bg-transparent text-[#0d65f2] checked:bg-[#0d65f2] checked:border-[#0d65f2] checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#ced8e8] focus:outline-none"
+                />
+                <p class="text-[#0d131c] text-base font-normal leading-normal">Recovery time</p>
+              </label>
+              <label class="flex gap-x-3 py-3 flex-row">
+                <input
+                  type="checkbox"
+                  class="h-5 w-5 rounded border-[#ced8e8] border-2 bg-transparent text-[#0d65f2] checked:bg-[#0d65f2] checked:border-[#0d65f2] checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#ced8e8] focus:outline-none"
+                />
+                <p class="text-[#0d131c] text-base font-normal leading-normal">Impacted resources</p>
+              </label>
+            </div>
+            <p class="text-[#0d131c] text-base font-normal leading-normal pb-3 pt-1 px-4">
+              CalCS allows you to fine-tune these parameters to match real-world conditions. For instance, you can set the failure duration to 15 minutes and the recovery time to 5
+              minutes.
+            </p>
+            <div class="flex w-full grow bg-[#f8f9fc] @container p-4">
+              <div class="w-full gap-1 overflow-hidden bg-[#f8f9fc] @[480px]:gap-2 aspect-[3/2] rounded-xl flex">
+                <div
+                  class="w-full bg-center bg-no-repeat bg-cover aspect-auto rounded-none flex-1"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDrxECXzTuM_fJFpBwAx6_i31VT2F9W-iyW8I8PW651hIkyZFu4lWebw-5689qKFjHAmg3mwv-qdSAxgb6K8ZrdRohJAv4R-ZZffAf4QL9wf8yPbN6lepvYGJODNo-dkPkRzxsyN9TytHbtUNVN142DsYCJr2m4nD4YURmiqNZcnoWQEOH5wPoKKa43KbApk9Ij9Znvgwk_lrEg27FoJtoz2VMFtJJCQIKRtqAXEfj7_9Z5id4uiMoSFWGE1q5EluHXeeuUyBrIDncL");'
+                ></div>
+              </div>
+            </div>
+            <h3 class="text-[#0d131c] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Step 3: Run the Simulation</h3>
+            <p class="text-[#0d131c] text-base font-normal leading-normal pb-3 pt-1 px-4">
+              Once configured, start the simulation. CalCS will inject the specified failure into your Azure environment, allowing you to observe how your applications respond.
+              During the simulation, CalCS provides real-time monitoring and logging of the failure event and its impact.
+            </p>
+            <div class="flex w-full grow bg-[#f8f9fc] @container p-4">
+              <div class="w-full gap-1 overflow-hidden bg-[#f8f9fc] @[480px]:gap-2 aspect-[3/2] rounded-xl flex">
+                <div
+                  class="w-full bg-center bg-no-repeat bg-cover aspect-auto rounded-none flex-1"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCFcRt5SIINlhGe8PJCxXShbq7scPdJSaQsx6XZwT8RqLDiHenMaHzSrRYLumdjhul04iPMip9iLoAE27kG8CfAqr-OZegR4zH4LhHE4mDMGD28Za11evkXG1Arsq26ihuMUKLKcHaZptnE8XihGdAkoF-naS5gRFFCrRiV8DuuTXYkgIkd1orptmRiMc6lsCA4SkJIslw-rjGDttL0M2FM6eV2YOXQDuSyyF_6wLYMe1WwU7JZ75TFMsAtQqSG05Vxfew4uXJOlBAB");'
+                ></div>
+              </div>
+            </div>
+            <h3 class="text-[#0d131c] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Step 4: Analyze the Results</h3>
+            <p class="text-[#0d131c] text-base font-normal leading-normal pb-3 pt-1 px-4">
+              After the simulation, CalCS generates detailed reports and logs. Analyze these results to understand:
+            </p>
+            <div class="px-4">
+              <label class="flex gap-x-3 py-3 flex-row">
+                <input
+                  type="checkbox"
+                  class="h-5 w-5 rounded border-[#ced8e8] border-2 bg-transparent text-[#0d65f2] checked:bg-[#0d65f2] checked:border-[#0d65f2] checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#ced8e8] focus:outline-none"
+                />
+                <p class="text-[#0d131c] text-base font-normal leading-normal">Application downtime</p>
+              </label>
+              <label class="flex gap-x-3 py-3 flex-row">
+                <input
+                  type="checkbox"
+                  class="h-5 w-5 rounded border-[#ced8e8] border-2 bg-transparent text-[#0d65f2] checked:bg-[#0d65f2] checked:border-[#0d65f2] checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#ced8e8] focus:outline-none"
+                />
+                <p class="text-[#0d131c] text-base font-normal leading-normal">Recovery processes</p>
+              </label>
+              <label class="flex gap-x-3 py-3 flex-row">
+                <input
+                  type="checkbox"
+                  class="h-5 w-5 rounded border-[#ced8e8] border-2 bg-transparent text-[#0d65f2] checked:bg-[#0d65f2] checked:border-[#0d65f2] checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#ced8e8] focus:outline-none"
+                />
+                <p class="text-[#0d131c] text-base font-normal leading-normal">Performance metrics</p>
+              </label>
+            </div>
+            <p class="text-[#0d131c] text-base font-normal leading-normal pb-3 pt-1 px-4">
+              Identify any bottlenecks or areas for improvement in your system's resilience. Use the insights gained to optimize your infrastructure and application design.
+            </p>
+            <div class="flex w-full grow bg-[#f8f9fc] @container p-4">
+              <div class="w-full gap-1 overflow-hidden bg-[#f8f9fc] @[480px]:gap-2 aspect-[3/2] rounded-xl flex">
+                <div
+                  class="w-full bg-center bg-no-repeat bg-cover aspect-auto rounded-none flex-1"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAmCJ6KuCVeqPggkCDBhrqzu5OqtoPf3BSgRN8QK8pC94sFymoeZAFvL-OKvi0PXmWzy5HeShzRr4vwoaj1NFxgXelfzoUKL_BQ9RxoHSElIavgtAPydFlOolp8vYu1xy4RpKaNQfaaD54HF7SCDc0XzoTYH-G2977-2WmWYbqVU29ETwXRLmwq936ypaKYlo3I75KyQoWhcffP3ZhzF7WhPnkR8SgT16b7wgOr4WJ2vX4-Bl5qhcvTMYS1bz-icSEUW8ttX7tbXtO-");'
+                ></div>
+              </div>
+            </div>
+            <h3 class="text-[#0d131c] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Conclusion</h3>
+            <p class="text-[#0d131c] text-base font-normal leading-normal pb-3 pt-1 px-4">
+              Simulating Azure failures with CalCS is a proactive approach to ensuring your applications are robust and reliable. By following these steps, you can identify and
+              address potential weaknesses, ultimately improving your system's performance and availability. Start simulating today and build more resilient applications with
+              CalCS.
+            </p>
+          </div>
+        
+
+        </div>
+        <footer class="flex justify-center">
+          <div class="flex max-w-[960px] flex-1 flex-col">
+            <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
+              <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
+                <a class="text-[#497a9c] text-base font-normal leading-normal min-w-40" href="https://www.calsoftinc.com/privacy-policy/">Privacy Policy</a>
+                <a class="text-[#497a9c] text-base font-normal leading-normal min-w-40" href="https://www.calsoftinc.com/privacy-policy/">Terms of Service</a>
+              </div>
+              <div class="flex flex-wrap justify-center gap-4">
+                <a href="https://www.linkedin.com/company/calsoft/">
+                  <div class="text-[#497a9c]" data-icon="LinkedinLogo" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+                <a href="https://x.com/CalsoftInc">
+                  <div class="text-[#497a9c]" data-icon="TwitterLogo" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+                <a href="https://github.com/CalsoftPvt">
+                  <div class="text-[#497a9c]" data-icon="GithubLogo" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.72,41.72,0,0,1,200,104Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+              </div>
+              <p class="text-[#497a9c] text-base font-normal leading-normal">© 2025 Calsoft Inc. All rights reserved.</p>
+            </footer>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
+
