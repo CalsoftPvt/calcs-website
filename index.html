@@ -23,14 +23,14 @@
           </div>
           <div class="flex flex-1 justify-end gap-8">
             <div class="flex items-center gap-9">
-              <a class="text-[#0d161c] text-sm font-medium leading-normal" href="#">Features</a>
-              <a class="text-[#0d161c] text-sm font-medium leading-normal" href="#">Case Study</a>
-              <a class="text-[#0d161c] text-sm font-medium leading-normal" href="#">Blog</a>
-              <a class="text-[#0d161c] text-sm font-medium leading-normal" href="#">Contact</a>
+              <a class="text-[#0d161c] text-sm font-medium leading-normal" href="#features">Features</a>
+              <a class="text-[#0d161c] text-sm font-medium leading-normal" href="#case-study">Case Study</a>
+              <a class="text-[#0d161c] text-sm font-medium leading-normal" href="#blog">Blog</a>
             </div>
             <button
               class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#259ef4] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em]"
-            >
+              onclick="window.location.href='https://www.calsoftinc.com/contact-us'"
+              >
               <span class="truncate">Request a Demo</span>
             </button>
           </div>
@@ -56,19 +56,21 @@
                   <div class="flex-wrap gap-3 flex">
                     <button
                       class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#259ef4] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
-                    >
+                      onclick="window.location.href='https://www.calsoftinc.com/contact-us'"                      
+                      >
                       <span class="truncate">Request a Demo</span>
                     </button>
                     <button
                       class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#e7eef4] text-[#0d161c] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
-                    >
+                      onclick="window.location.href='#features'"
+                      >
                       <span class="truncate">See Features</span>
                     </button>
                   </div>
                 </div>
               </div>
             </div>
-            <h2 class="text-[#0d161c] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Key Features</h2>
+            <h2 id="features" class="text-[#0d161c] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Key Features</h2>
             <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
               <div class="flex flex-1 gap-3 rounded-lg border border-[#cedde8] bg-slate-50 p-4 flex-col">
                 <div class="text-[#0d161c]" data-icon="Cloud" data-size="24px" data-weight="regular">
@@ -136,15 +138,15 @@
                 </div>
               </div>
             </div>
-            <h2 class="text-[#0d161c] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Case Study</h2>
+            <h2 id="case-study" class="text-[#0d161c] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Case Study</h2>
             <div class="p-4">
               <div class="flex items-stretch justify-between gap-4 rounded-xl bg-slate-50 p-4 shadow-[0_0_4px_rgba(0,0,0,0.1)]">
                 <div class="flex flex-[2_2_0px] flex-col gap-4">
                   <div class="flex flex-col gap-1">
-                    <p class="text-[#0d161c] text-base font-bold leading-tight">Enterprise Customer Saves $336,000 Annually with CalCS</p>
+                    <p class="text-[#0d161c] text-base font-bold leading-tight">Enterprise Customer Saves $261,000 Annually with CalCS</p>
                     <p class="text-[#497a9c] text-sm font-normal leading-normal">
-                      This is a leading cloud networking company, reduced their cloud testing costs by $252,000 per year after adopting CalCS, achieving a 48% ROI in Year 1
-                      and 236% ROI in Year 2.
+                      This is a leading cloud networking company, reduced their cloud testing costs by $261,000 per year after adopting CalCS, achieving a 49% ROI in Year 1
+                      and 348% ROI in Year 2.
                     </p>
                   </div>
                   <button
@@ -159,7 +161,7 @@
                 ></div>
               </div>
             </div>
-            <h2 class="text-[#0d161c] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Blog</h2>
+            <h2 id="blog" class="text-[#0d161c] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Blog</h2>
             <div class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
               <div class="flex items-stretch p-4 gap-3">
                 <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
@@ -184,55 +186,17 @@
                 </div>
               </div>
             </div>
-            <h2 class="text-[#0d161c] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Contact Us</h2>
-            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
-              <label class="flex flex-col min-w-40 flex-1">
-                <p class="text-[#0d161c] text-base font-medium leading-normal pb-2">Name</p>
-                <input
-                  placeholder="Your Name"
-                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#0d161c] focus:outline-0 focus:ring-0 border border-[#cedde8] bg-slate-50 focus:border-[#cedde8] h-14 placeholder:text-[#497a9c] p-[15px] text-base font-normal leading-normal"
-                  value=""
-                />
-              </label>
-            </div>
-            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
-              <label class="flex flex-col min-w-40 flex-1">
-                <p class="text-[#0d161c] text-base font-medium leading-normal pb-2">Email</p>
-                <input
-                  placeholder="Your Email"
-                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#0d161c] focus:outline-0 focus:ring-0 border border-[#cedde8] bg-slate-50 focus:border-[#cedde8] h-14 placeholder:text-[#497a9c] p-[15px] text-base font-normal leading-normal"
-                  value=""
-                />
-              </label>
-            </div>
-            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
-              <label class="flex flex-col min-w-40 flex-1">
-                <p class="text-[#0d161c] text-base font-medium leading-normal pb-2">Message</p>
-                <textarea
-                  placeholder="Your Message"
-                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#0d161c] focus:outline-0 focus:ring-0 border border-[#cedde8] bg-slate-50 focus:border-[#cedde8] min-h-36 placeholder:text-[#497a9c] p-[15px] text-base font-normal leading-normal"
-                ></textarea>
-              </label>
-            </div>
-            <div class="flex px-4 py-3 justify-start">
-              <button
-                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#259ef4] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em]"
-              >
-                <span class="truncate">Schedule Your Free Demo</span>
-              </button>
-            </div>
           </div>
         </div>
         <footer class="flex justify-center">
           <div class="flex max-w-[960px] flex-1 flex-col">
             <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
               <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
-                <a class="text-[#497a9c] text-base font-normal leading-normal min-w-40" href="#">Contact</a>
-                <a class="text-[#497a9c] text-base font-normal leading-normal min-w-40" href="#">Privacy Policy</a>
-                <a class="text-[#497a9c] text-base font-normal leading-normal min-w-40" href="#">Terms of Service</a>
+                <a class="text-[#497a9c] text-base font-normal leading-normal min-w-40" href="https://www.calsoftinc.com/privacy-policy/">Privacy Policy</a>
+                <a class="text-[#497a9c] text-base font-normal leading-normal min-w-40" href="https://www.calsoftinc.com/privacy-policy/">Terms of Service</a>
               </div>
               <div class="flex flex-wrap justify-center gap-4">
-                <a href="#">
+                <a href="https://www.linkedin.com/company/calsoft/">
                   <div class="text-[#497a9c]" data-icon="LinkedinLogo" data-size="24px" data-weight="regular">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
                       <path
@@ -241,7 +205,7 @@
                     </svg>
                   </div>
                 </a>
-                <a href="#">
+                <a href="https://x.com/CalsoftInc">
                   <div class="text-[#497a9c]" data-icon="TwitterLogo" data-size="24px" data-weight="regular">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
                       <path
@@ -250,7 +214,7 @@
                     </svg>
                   </div>
                 </a>
-                <a href="#">
+                <a href="https://github.com/CalsoftPvt">
                   <div class="text-[#497a9c]" data-icon="GithubLogo" data-size="24px" data-weight="regular">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
                       <path
